@@ -6,6 +6,8 @@
  * return always 0 success
 */
 
+// this is the description
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
