@@ -14,7 +14,7 @@ int main(void)
 	char alphabet[26];
 	int i;
 
-	alphabet [] = "abcdefghijklmnopqrstuvwxyz";
+	alphabet [26] = "abcdefghijklmnopqrstuvwxyz";
 	i = 0;
 
 	while (alphabet[i] != 0)
