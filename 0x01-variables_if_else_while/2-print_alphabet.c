@@ -11,16 +11,12 @@
 
 int main(void)
 {
-	char alphabet[26];
-	int i;
+	char letter;
 
-	alphabet [26] = "abcdefghijklmnopqrstuvwxyz";
-	i = 0;
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
-	while (alphabet[i] != 0)
-	{
-	putchar(alphabet[i]);
-	i++;
-	}
+	putchar('\n');
+
 	return (0);
 }
