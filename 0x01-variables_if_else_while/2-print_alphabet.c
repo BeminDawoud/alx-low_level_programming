@@ -11,8 +11,11 @@
 
 int main(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz"
-	int i = 0;
+	char alphabet[];
+	int i;
+
+	alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	i = 0;
 
 	while (alphabet[i] != 0)
 	{
