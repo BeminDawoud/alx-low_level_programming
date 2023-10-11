@@ -9,17 +9,16 @@
 
 int _isalpha(int c)
 {
-	if (c < 'a' || c > 'z')
-	{
-		return (0);
-	}
-	else if (c < 'A' || c > 'Z')
-	{
-		return (0);
-	}
-	else
-	{
-		return (1);
-	}
+	char lower, upper;
+	int isletter = 0;
 
+	for (lower = 'a'; lower <= 'z'; lower++)
+	{
+		for (upper = 'A'; upper <= 'Z'; upper++)
+		{
+			if (c == lower || c == upper)
+				isletter = 1;
+		}
+	}
+	return (isletter);
 }
