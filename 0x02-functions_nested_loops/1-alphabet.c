@@ -2,7 +2,7 @@
 /**
  * main - Entry point of the program
  *
- * Description:
+ * Description: Description
  *
  * Return: 0 on success
  */
