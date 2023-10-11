@@ -7,9 +7,8 @@
  * Return: 0 on success
  */
 
-void print_alphabet(void)
+void print_alphabet(void) /* it prints lowercase alphabet*/
 {
-	/* It prints the alphabet in lowercase fallowed by a new line */
 	char i;
 
 	for (i = 'a'; i <= 'z'; i++)
