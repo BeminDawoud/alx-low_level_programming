@@ -6,11 +6,6 @@
  *
  * Return: 0 on success
  */
-int main()
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void)
 {
@@ -20,5 +15,6 @@ void print_alphabet(void)
 	{
 		_putchar(i);
 	}
+	_putchar('\n');
 	return;
 }
