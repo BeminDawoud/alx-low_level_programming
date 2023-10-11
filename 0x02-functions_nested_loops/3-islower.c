@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * int c - parameter
  * _islower - Check Description
+ * @c: parameter for function
+ *
  * Description: function checks if c is a lowercase alphabet
  * Return: 0.
  */
