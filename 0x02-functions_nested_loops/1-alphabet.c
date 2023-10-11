@@ -7,7 +7,7 @@
  * Return: 0 on success
  */
 
-void print_alphabet(void) /* it prints lowercase alphabet*/
+void print_alphabet(void) /* print_alphabet() it prints lowercase alphabet*/
 {
 	char i;
 
