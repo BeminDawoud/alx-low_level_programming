@@ -2,7 +2,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: print_alphabet prints the alphabet in lowercase fallowed by a new line
+ * print_alphabet prints the alphabet in lowercase fallowed by a new line
  *
  * Return: 0 on success
  */
