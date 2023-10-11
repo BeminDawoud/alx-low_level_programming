@@ -9,6 +9,7 @@
 
 void print_alphabet(void)
 {
+	/* It prints the alphabet in lowercase fallowed by a new line */
 	char i;
 
 	for (i = 'a'; i <= 'z'; i++)
