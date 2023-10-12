@@ -6,22 +6,18 @@
  *
  * Return: 0 on success
  */
-
 void more_numbers(void)
 {
-	int i;
-	int j;
+	int i, j = 0;
 
-	for (i = '0'; i <= '9'; i++)
+	for (; j < 10; j++)
 	{
-		for (j = 0; j <= 14; j++)
+		for (i = 0; i <= 14; i++)
 		{
-			if (j > 9)
-			{
-				_putchar(j / 10 + '0');
-			}
-			else
-				_putchar(j % 10 + '0');
+			if (i > 9)
+				_putchar(i / 10 + '0');
+
+			_putchar(i % 10 + '0');
 		}
 		_putchar('\n');
 	}
