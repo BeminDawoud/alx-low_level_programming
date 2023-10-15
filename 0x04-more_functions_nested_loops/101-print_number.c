@@ -17,6 +17,7 @@ void print_number(int n)
 	}
 	else
 		print_integer(n);
+	_puchar('\n');
 }
 
 /**
