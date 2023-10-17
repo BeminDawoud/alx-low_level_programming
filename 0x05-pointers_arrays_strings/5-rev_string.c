@@ -12,7 +12,8 @@ void rev_string(char *s)
 {
 	int i = strlen(s) - 1;
 	int j = 0;
-	char *c = NULL;
+	char c[strlen(s)];
+	char *pt = c;
 
 	while (i >= 0)
 	{
@@ -20,5 +21,5 @@ void rev_string(char *s)
 		i--;
 		j++;
 	}
-	*s = *c;
+	*s = *pt;
 }
