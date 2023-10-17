@@ -7,19 +7,18 @@
  * @s: an input string
  * Return: Nothing
  */
-
 void rev_string(char *s)
 {
-	int i = strlen(s) - 1;
-	int j = 0;
-	char c[strlen(s)];
-	char *pt = c;
+	int len = 0, i = 0;
+	char aux;
 
-	while (i >= 0)
+	while (s[len] != '\0')
+		len++;
+
+	while (i < len--)
 	{
-		c[j] = s[i];
-		i--;
-		j++;
+		aux = s[i];
+		s[i++] = s[len];
+		s[len] = aux;
 	}
-	*s = *pt;
-}
+}	
