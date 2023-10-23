@@ -19,8 +19,8 @@ char *_strstr(char *haystack, char *needle)
 			needle++;
 			haystack++;
 		}
-		accept = temp;
-		s++;
+		needle = temp;
+		haystack++;
 	}
 	return (NULL);
 }
