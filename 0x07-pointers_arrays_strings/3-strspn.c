@@ -14,16 +14,11 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int ans;
 	char *temp = accept;
 
-	while (*accept)
-	{
-		len++;
-		accept++;
-	}
 	accept = temp;
 	while (*s)
 	{
 		flag = 0;
-		for (i = 0; i < len; i++)
+		while (*accept)
 		{
 			if (*s == accept[i])
 			{
@@ -31,6 +26,7 @@ unsigned int _strspn(char *s, char *accept)
 				flag = 1;
 				break;
 			}
+			accept++;
 		}
 		s++;
 		accept = temp;
