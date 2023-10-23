@@ -8,8 +8,6 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int len = 0;
-	unsigned int i;
 	unsigned int flag;
 	unsigned int ans;
 	char *temp = accept;
@@ -20,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		flag = 0;
 		while (*accept)
 		{
-			if (*s == accept[i])
+			if (*s == *accept)
 			{
 				ans++;
 				flag = 1;
