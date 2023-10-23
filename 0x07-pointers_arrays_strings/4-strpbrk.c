@@ -5,7 +5,7 @@
  * @accept: characters to locate
  * Return: returns pointer
  */
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 	while (*s)
 	{
