@@ -33,6 +33,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 		s++;
+		accept = temp;
 		if (flag == 0)
 			break;
 	}
