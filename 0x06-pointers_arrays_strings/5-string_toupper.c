@@ -6,15 +6,15 @@
  * @s: an input string
  * Return: char pointer to converted string
  */
-char *string_toupper(char *s)
+char *string_toupper(char *a)
 {
-	char *start = s;
+	char *swap = a;
 
 	while (*s)
 	{
-		if (*s >= 'a' && *s <= 'z')
-			*s -= 32;
-		s++;
+		if (*a >= 'a' && *a <= 'z')
+			*a = *a - 32;
+		a++;
 	}
-	return (start);
+	return (swap);
 }
