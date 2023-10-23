@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		flag = 0;
 		while (*accept)
 		{
-			if (*s == *accept)
+			if (*accept == *s)
 			{
 				ans++;
 				flag = 1;
