@@ -9,6 +9,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 	char *temp = accept;
+
 	while (*s)
 	{
 		while (*accept)
@@ -20,7 +21,5 @@ char *_strpbrk(char *s, char *accept)
 		accept = temp;
 		s++;
 	}
-	if (*s == *accept)
-		return (s);
 	return (NULL);
 }
