@@ -10,6 +10,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int len = 0;
 	unsigned int i;
+	unsigned int flag;
 	unsigned int ans;
 	char *temp = accept;
 
@@ -19,17 +20,21 @@ unsigned int _strspn(char *s, char *accept)
 		accept++;
 	}
 	accept = temp;
-	while (*s != ' ')
+	while (*s)
 	{
+		flag = 0;
 		for (i = 0; i < len; i++)
 		{
 			if (*s == accept[i])
 			{
 				ans++;
+				flag = 1;
 				break;
 			}
 		}
 		s++;
+		if (flag == 0)
+			break;
 	}
 	return (ans);
 }
