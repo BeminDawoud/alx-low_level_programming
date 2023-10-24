@@ -19,9 +19,10 @@ int main(void)
 	int len2 = strlen(upper) - 1;
 	int len3 = strlen(symbol) - 1;
 	int len4 = strlen(digits) - 1;
+	int i;
 
 	srand(time(NULL));
-	for (int i = 0; i < 12; i++)
+	for (i = 0; i < 12; i++)
 	{
 		int choice = rand() % 4;
 
