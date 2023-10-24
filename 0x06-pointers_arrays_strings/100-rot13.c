@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * leet - the function encodes a string.
+ * rot13 - the function encodes a string.
  * @s: input string to encode
  * Return: encoded string
  */
-char *leet(char *s)
+char *rot13(char *s)
 {
 	char check[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char sub[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
