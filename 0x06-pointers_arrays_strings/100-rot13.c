@@ -21,5 +21,6 @@ char *rot13(char *s)
 		}
 		i = 0;
 	}
-	return (start);
+	s = start;
+	return (s);
 }
