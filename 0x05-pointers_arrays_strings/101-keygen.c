@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char password[12];
+	char password[15];
 	char lower[] = "abcdefghijklmnopqrstuvwxyz";
 	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbol[] = "!@#$^&*(_)@$&!";
@@ -22,7 +22,7 @@ int main(void)
 	int i;
 
 	srand(time(NULL));
-	for (i = 0; i < 12; i++)
+	for (i = 0; i < 15; i++)
 	{
 		int choice = rand() % 4;
 
@@ -36,7 +36,7 @@ int main(void)
 			password[i] = digits[rand() % len4];
 	}
 
-	password[12] = '\0';
+	password[15] = '\0';
 	printf("%s\n", password);
 	return (0);
 }
