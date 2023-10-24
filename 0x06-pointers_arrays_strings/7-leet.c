@@ -10,6 +10,7 @@ char *leet(char *s)
 	char check[] = "aAoOeElLtT";
 	char sub[] = "4400331177";
 	int i = 0;
+	char *start = s;
 
 	for (; *s; s++)
 	{
@@ -20,5 +21,5 @@ char *leet(char *s)
 		}
 		i = 0;
 	}
-	return (s);
+	return (start);
 }
