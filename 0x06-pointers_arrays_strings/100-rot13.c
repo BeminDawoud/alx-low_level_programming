@@ -14,10 +14,13 @@ char *rot13(char *s)
 
 	for (; *s; s++)
 	{
-		for (; i < 53; i++)
+		for (; check[i]; i++)
 		{
 			if (*s == check[i])
+			{
 				*s = sub[i];
+				break;
+			}
 		}
 		i = 0;
 	}
