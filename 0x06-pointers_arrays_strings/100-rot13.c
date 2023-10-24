@@ -11,11 +11,11 @@ char *leet(char *s)
 	char sub[] = "4400331177";
 	int i = 0;
 
-	for(; *s; s++)
+	for (; *s; s++)
 	{
 		for (; i < 9; i++)
 		{
-			if( *s == check[i])
+			if (*s == check[i])
 				*s = sub[i];
 		}
 		i = 0;
