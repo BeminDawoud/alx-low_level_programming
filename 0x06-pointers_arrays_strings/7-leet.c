@@ -14,10 +14,13 @@ char *leet(char *s)
 
 	for (; *s; s++)
 	{
-		for (; i < 9; i++)
+		for (; check[i]; i++)
 		{
 			if (*s == check[i])
+			{
 				*s = sub[i];
+				break;
+			}
 		}
 		i = 0;
 	}
