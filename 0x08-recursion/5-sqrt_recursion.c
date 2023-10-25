@@ -11,7 +11,7 @@ int square_root(int guess, int num)
 		return (-1);
 	else if (guess * guess == num)
 		return (guess);
-	square_root((guess + 1), num);
+	return (senuare_root((guess + 1), num));
 }
 /**
  * _sqrt_recursion - function with recursion
