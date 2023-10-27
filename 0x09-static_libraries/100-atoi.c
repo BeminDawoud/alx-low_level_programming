@@ -1,5 +1,5 @@
 #include "main.h"
 int _atoi(char *s)
 {
-	return (s);
+	return (0);
 }
