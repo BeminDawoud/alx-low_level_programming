@@ -6,7 +6,7 @@
 * @argv: array of strings
 * Return: 0
 */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	__attribute__((unused))int x = argc;
 	printf("%s\n", argv[0]);
