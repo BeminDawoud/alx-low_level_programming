@@ -24,23 +24,16 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 		return (0);
 	}
-	while (coins[i])
+	while (change > 0)
 	{
-		if ((change / coins[i]) > 0 && (change % coins[i]) == 0)
+		if (change >= coins[i])
 		{
-			count += (change / coins[i]);
-			printf("%d\n", count);
-			return (0);
-		}
-		else if ((change / coins[i]) > 0 && (change % coins[i]) != 0)
-		{
-			count += (change / coins[i]);
-			change = change / coins[i];
-			i++;
-			continue;
+			count += change / coins[i];
+			change = change % coins[i];
 		}
 		else
 			i++;
 	}
+	printf("%d\n", count);
 	return (0);
 }
