@@ -42,4 +42,5 @@ int main(int argc, char *argv[])
 		else
 			i++;
 	}
+	return (0);
 }
