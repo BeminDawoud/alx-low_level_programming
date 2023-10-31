@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	int j = 0;
 	char *ptr;
 	
-	if (str == NULL || ptr == NULL)
+	if (str == NULL)
 		return (NULL);
 	while (str[j])
 	{
