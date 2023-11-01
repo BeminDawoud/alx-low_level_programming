@@ -7,6 +7,6 @@
 */
 char **strtow(char *str)
 {
-	if (str == NULL || str == '\0')
+	if (str == NULL || *str)
 		return (NULL);
 }
