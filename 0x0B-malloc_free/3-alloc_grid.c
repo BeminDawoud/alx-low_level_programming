@@ -1,23 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
-/**
- * free_grids - free memory.
- * @grid: aloocated array
- * @height: hieght.
- * Return: void.
- */
 
-void free_grids(int **grid, int height)
-{
-	int i;
-
-	for (i = 0; i < height; i++)
-		free(grid[i]);
-	free(grid);
-}
-
-/**
+/*
  * alloc_grid - concat a string.
  * @width: width.
  * @height: hieght.
@@ -40,7 +25,6 @@ int **alloc_grid(int width, int height)
 		if (ptr[i] == NULL)
 			return (NULL);
 	}
-	/*free_grids(array, height);*/
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
