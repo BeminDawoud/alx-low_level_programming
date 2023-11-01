@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * free_grid - free memory.
+ * free_grids - free memory.
  * @grid: aloocated array
  * @height: hieght.
  * Return: void.
@@ -40,7 +40,7 @@ int **alloc_grid(int width, int height)
 		if (ptr[i] == NULL)
 			return (NULL);
 	}
-	/*free_grid(array, height);*/
+	/*free_grids(array, height);*/
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
