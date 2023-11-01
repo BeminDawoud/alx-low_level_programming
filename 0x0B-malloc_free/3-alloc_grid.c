@@ -2,51 +2,33 @@
 #include <stdlib.h>
 
 /**
-* free_gridk - free a grid
-* @grid: grid
-* @height: height grid
-*/
-void free_gridk(int **grid, int height)
-{
-	int pos = 0;
-
-	while (pos < height)
-	{
-		free(grid[pos]);
-		pos++;
-	}
-	free(grid);
-}
-
-/**
-*alloc_grid - create empty array
-* @width: width array
-* @height: height array
-* Return: array
+*alloc_grid - create array
+* @width: width
+* @height: height
+* Return: pointer or NULL
 */
 int **alloc_grid(int width, int height)
 {
 	int i, j;
-	int **grid;
+	int **ptr;
 
 	if (height <= 0 || width <= 0)
 		return (NULL);
 
-	grid = (int **) malloc(sizeof(int *) * height);
+	ptr = (int **) malloc(sizeof(int *) * height);
 
-	if (grid == NULL)
+	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; i < height; i++)
 	{
-		grid[i] = malloc(sizeof(int) * width);
-		if (grid[i] == NULL)
+		ptr[i] = malloc(sizeof(int) * width);
+		if (ptr[i] == NULL)
 			return (NULL);
 	}
-	/*free_gridk(array, height);*/
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
-			grid[i][j] = 0;
+			ptr[i][j] = 0;
 	}
-	return (grid);
+	return (ptr);
 }
