@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	unsigned long int num1, num2;
+	unsigned long long int num1, num2, mul;
 	char *endptr1, *endptr2;
 
 	if (argc != 3)
@@ -18,8 +18,8 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	num1 = strtol(argv[1], &endptr1, 10);
-	num2 = strtol(argv[2], &endptr2, 10);
+	num1 = strtoull(argv[1], &endptr1, 10);
+	num2 = strtoull(argv[2], &endptr2, 10);
 
 	if (*endptr1 != '\0' || *endptr2 != '\0')
 	{
@@ -27,6 +27,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	printf("%ld\n", (num1 * num2));
+	mul = num1 * num2;
+	printf("%ld\n", mul);
 	return (0);
 }
