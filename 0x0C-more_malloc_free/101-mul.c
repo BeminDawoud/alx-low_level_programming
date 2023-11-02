@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 /**
  * main - multiply two numbers.
  * @argc: count of args
@@ -21,6 +22,11 @@ int main(int argc, char **argv)
 	num1 = strtoull(argv[1], &endptr1, 10);
 	num2 = strtoull(argv[2], &endptr2, 10);
 
+	if (num1 > (ULONG_MAX / num2))
+	{
+		printf("Error\n");
+		exit(98);
+	}
 	if (*endptr1 != '\0' || *endptr2 != '\0')
 	{
 		printf("Error\n");
