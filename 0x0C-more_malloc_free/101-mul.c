@@ -28,12 +28,6 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	if (num1 > (ULONG_MAX / num2))
-	{
-		printf("Error\n")
-		exit(98);
-	}
-
 	mul = num1 * num2;
 	printf("%ld\n", mul);
 	return (0);
