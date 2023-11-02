@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * _calloc - allocates a block of memory
- * @nmeme: number of blocks.
+ * @nmemb: number of blocks.
  * @size: size of block.
  * Return: NULL or pointer
  */
