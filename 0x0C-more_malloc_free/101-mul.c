@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	num1 = strtol(argv[1], &endptr1, 10);
 	num2 = strtol(argv[2], &endptr2, 10);
 
-	if (*endptr != '\0')
+	if (*endptr1 != '\0' || *endptr2 != '\0')
 	{
 		printf("Error\n");
 		exit(98);
