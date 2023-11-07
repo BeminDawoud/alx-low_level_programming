@@ -1,8 +1,7 @@
 #include "dog.h"
-
 /**
 * init_dog - put value for dog
-* @d: address 
+* @d: address
 * @name: string
 * @age: int
 * @owner: string
