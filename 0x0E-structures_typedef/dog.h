@@ -1,12 +1,11 @@
-#ifndef _FL_DOG_H_
-#define _FL_DOG_H_
-
+#ifndef _DOG_H_
+#define _DOG_H_
 /**
-* struct dog - this is a prototype for the object dog
-* @name: string.
-* @age: float
-* @owner: string
-*/
+ * struct dog - dogs
+ * @name: name
+ * @age: age
+ * @owner: owner
+ */
 typedef struct dog
 {
 	char *name;
