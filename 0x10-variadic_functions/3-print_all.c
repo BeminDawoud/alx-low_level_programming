@@ -26,14 +26,14 @@ void checkNULL(char *str)
 void print_all(const char *const format, ...)
 {
 	va_list args;
-	int i = 0;
-	int len = strlen(format);
+	int i = 0, len;
 	char *sep = ", ", *str;
 	bool sepFlag;
 
 	va_start(args, format);
 	while (format && format[i])
 	{
+		len = strlen(format);
 		sepFlag = false;
 		switch (format[i])
 		{
