@@ -32,7 +32,7 @@ void print_all(const char *const format, ...)
 	bool sepFlag;
 
 	va_start(args, format);
-	while (i < len)
+	while (format && format[i])
 	{
 		sepFlag = false;
 		switch (format[i])
