@@ -46,7 +46,7 @@ void print_all(const char *const format, ...)
 			sepFlag = true;
 			break;
 		case 'f':
-			printf("%f", va_arg(args, double));
+			printf("%.6g", va_arg(args, double));
 			sepFlag = true;
 			break;
 		case 's':
