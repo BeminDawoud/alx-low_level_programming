@@ -1,20 +1,20 @@
 #include "lists.h"
 /**
- * list_len - a function to print element of list.
- * @h: pointer to the first node.
+ * add_node - a function to print element of list.
+ * @head: pointer to the first node.
+ * str: string to be added. 
  * Return: number of elements.
 */
-size_t list_len(const list_t *h)
+list_t *add_node(list_t **head, const char *str)
 {
 	size_t count = 0;
 	const list_t *ptr;
 
 	ptr = malloc(sizeof(const list_t));
-	ptr = h;
-	while (ptr)
-	{
-		ptr = ptr->next;
-		count++;
-	}
-	return (count);
+	if (ptr == NULL)
+		return (NULL);
+	ptr->str = strdup(str);
+	ptr->next = head;
+	head = ptr;
+	return (head);
 }
