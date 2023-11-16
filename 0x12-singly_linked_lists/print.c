@@ -1,8 +1,4 @@
-#include "lists.h"
-/**
- * main - execute before main.
- * return 0
-*/
+#include <stdio.h>
 int main(void)
 {
 printf("Hello, Holberton");
