@@ -1,11 +1,18 @@
-section		.text
-	extern	printf
-	global	main
+extern printf
+section .data
+	msg: db "Hello, Holberton", 0
+	fmt: db "%s", 10, 0
 
+section .text
+	global main
 main:
-	mov		edi, msg
-	mov		eax, 0
-	call	printf
+	push rbp
+	mov rdi,fmt
+	mov rsi,msg
+	mov rax,0
+	call printf
 
-section		.data
-	msg db 'Hello, Holberton', Oxa, 0
+	pop rbp
+	mov rax,0
+	ret
+
