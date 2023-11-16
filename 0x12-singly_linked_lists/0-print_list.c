@@ -1,15 +1,15 @@
 #include "lists.h"
 /**
- * size_t print_list - a function to print element of list.
+ * print_list - a function to print element of list.
  * @h: pointer to the first node.
  * Return: number of elements.
 */
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	struct lists_s *ptr;
+	const list_t *ptr;
 
-	ptr = malloc(sizeof(struct lists_s));
+	ptr = malloc(sizeof(const list_t));
 	ptr = h;
 	while (ptr)
 	{
