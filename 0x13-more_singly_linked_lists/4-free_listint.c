@@ -4,9 +4,9 @@
  * @head: pointer to the first node.
  * Return: void
 */
-void free_list(list_t *head)
+void free_listint(listint_t *head)
 {
-	list_t *tmp, *ptr;
+	listint_t *tmp, *ptr;
 
 	if (head == NULL)
 		return;
