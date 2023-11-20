@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_list - a function to print element of list.
+ * free_listint - a function to print element of list.
  * @head: pointer to the first node.
  * Return: void
 */
@@ -16,6 +16,7 @@ void free_listint(listint_t *head)
 	while (tmp)
 	{
 		ptr = tmp->next;
+		free(ptr->n0);
 		free(tmp);
 		tmp = ptr;
 	}
