@@ -7,7 +7,7 @@
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *previous = NULL;
-	listtint_t *after = NULL;
+	listint_t *after = NULL;
 
 	if (head)
 	{
@@ -20,4 +20,5 @@ listint_t *reverse_listint(listint_t **head)
 		}
 		return (previous);
 	}
+	return (NULL);
 }
