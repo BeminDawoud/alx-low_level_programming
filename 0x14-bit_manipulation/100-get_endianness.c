@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * et_endianness - check endianness.
+ * get_endianness - check endianness.
  * Return:  1 or 0.
  */
 
