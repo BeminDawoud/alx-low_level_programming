@@ -7,10 +7,11 @@
  * Return: Nothing
  */
 
-int _strlen(char *s)
+int _strlen(char *str)
 {
-	int num;
+	int count = 0;
 
-	num = strlen(s);
-	return (num);
+	while(str)
+		count++;
+	return (count);
 }
