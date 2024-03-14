@@ -27,6 +27,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		previous = current;
 		current = current->next;
+		current->prev = previous->prev;
 		count++;
 	}
 
