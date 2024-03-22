@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * print_holberton - print the logo of Holberton
- *
+ * print_school - print the logo.
  * Return: Nothing
- *
- * Learn more: https://www.holbertonschool.com
  */
 void print_school(void)
 {
