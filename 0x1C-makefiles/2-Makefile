@@ -3,5 +3,5 @@ SRC = main.c school.c
 OBJ = ${SRC:.C=.0}
 NAME = school
 
-all: ${SRC}
+all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME} 
