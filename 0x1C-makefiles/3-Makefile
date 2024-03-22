@@ -1,22 +1,22 @@
-#!/usr/bin/make -f
-
 CC = gcc
 SRC = main.c school.c
 OBJ = ${SRC:.C=.0}
 NAME = school
 RM = rm
 
+# compile C source files into object files
+%.o: %.c m.h
+	$(CC) -c -o $@ $<
+
 all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME} 
 
 clean:
-	$(RM) -f *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) -f $(OBJ)
+	$(RM) $(OBJ)
 
-fclean:
-	$(RM) -f *~ $(NAME)
-	$(RM) -f $(OBJ)
+fclean: clean oclean
 
 re: oclean all
